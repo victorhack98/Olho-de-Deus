@@ -1,5 +1,84 @@
-<p align="center"> <pre> ⢀⣤⣶⣶⣶⣦⣤⡀ ⣠⣶⣿⣿⣿⣿⣿⣿⣶⣄ ⣴⣿⣿⡿⠿⠛⠛⠿⢿⣿⣿⣦ ⣿⣿⡟ O ⢻⣿⣿ ⠻⢿⣷⣦⣄ ⣠⣴⣾⡿⠟ OLHO DE DEUS </pre> </p> <h1 align="center">👁️ OLHO DE DEUS</h1> <p align="center"> <sub>⚡ Powered by <b>SystemDown</b></sub> </p> <p align="center"> Ferramenta profissional para <b>Termux</b> focada em <b>OSINT, coleta de dados, scanners e testes de rede</b>.<br> Criada para estudos, laboratórios e ambientes controlados. </p> <p align="center"> <img src="https://img.shields.io/badge/Status-Ativo-green?style=for-the-badge"> <img src="https://img.shields.io/badge/Termux-OK-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Linux-Kali%20%7C%20Termux-purple?style=for-the-badge"> <img src="https://img.shields.io/badge/Bash-Automation-orange?style=for-the-badge"> </p> --- ## 🧠 Ferramentas Inclusas ### 🔍 OSINT / Enumeração / Scanners | Ferramenta | Para que serve | |-----------|----------------| | **TheHarvester** | Coleta de e-mails, domínios, hosts e subdomínios | | **PhoneInfoga** | Análise e OSINT de números telefônicos | | **Nmap** | Varredura de portas, serviços e versões | | **Nikto** | Scanner de vulnerabilidades em servidores web | | **WhatWeb** | Identificação de tecnologias e frameworks | | **Wafw00f** | Detecção de WAF (Firewall de Aplicações Web) | | **Dirsearch** | Enumeração de diretórios e arquivos | | **Gobuster** | Brute force de diretórios, DNS e vhosts | | **FFUF** | Fuzzing de URLs e parâmetros | | **Amass** | Enumeração avançada de subdomínios | | **Subfinder** | Descoberta passiva de subdomínios | | **Assetfinder** | Coleta de ativos e domínios relacionados | | **XSStrike** | Detecção de vulnerabilidades XSS | | **Dalfox** | Scanner automatizado de XSS | | **Katana** | Crawler para mapear endpoints | | **Arjun** | Descoberta de parâmetros HTTP ocultos | | **Httpx** | Validação de serviços HTTP/HTTPS | | **Nuclei** | Scanner baseado em templates de vulnerabilidades | --- ### 🌐 Stress / Rede / HTTP (uso educacional) | Ferramenta | Para que serve | |-----------|----------------| | **Hping3** | Geração de pacotes TCP/IP para testes de rede | | **Slowloris** | DoS HTTP via conexões lentas | | **GoldenEye** | Stress HTTP em servidores web | | **Xerxes** | Flood HTTP para testes de carga | | **Torshammer** | DoS HTTP usando múltiplas conexões | | **HULK** | Flood HTTP com headers aleatórios | | **SlowHTTPTest** | Simulação de ataques HTTP lentos | | **PyFlooder** | Flood de tráfego para stress de rede | | **HTTP-Flood** | Envio massivo de requisições HTTP | | **UDP-Flood** | Stress de rede via pacotes UDP | | **TCP-Flood** | Stress de rede via pacotes TCP | | **HOIC** | Ferramenta de stress em camada de aplicação | | **Locust** | Testes de carga, tráfego e performance | --- ## 🚀 Instalação no Termux
-bash
+<p align="center">
+  <pre>
+        ⢀⣤⣶⣶⣶⣦⣤⡀
+     ⣠⣶⣿⣿⣿⣿⣿⣿⣶⣄
+   ⣴⣿⣿⡿⠿⠛⠛⠿⢿⣿⣿⣦
+  ⣿⣿⡟          O          ⢻⣿⣿
+   ⠻⢿⣷⣦⣄        ⣠⣴⣾⡿⠟
+          OLHO DE DEUS
+  </pre>
+</p>
+
+<h1 align="center">👁️ OLHO DE DEUS</h1>
+
+<p align="center">
+  <sub>⚡ Powered by <b>SystemDown</b></sub>
+</p>
+
+<p align="center">
+Ferramenta profissional para <b>Termux</b> focada em <b>OSINT, coleta de dados, scanners e testes de rede</b>.<br>
+Criada para estudos, laboratórios e ambientes controlados.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Ativo-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Termux-OK-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Linux-Kali%20%7C%20Termux-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Bash-Automation-orange?style=for-the-badge">
+</p>
+
+---
+
+## 🧠 Ferramentas Inclusas
+
+### 🔍 OSINT / Enumeração / Scanners
+
+| Ferramenta | Para que serve |
+|-----------|----------------|
+| **TheHarvester** | Coleta de e-mails, domínios, hosts e subdomínios |
+| **PhoneInfoga** | Análise e OSINT de números telefônicos |
+| **Nmap** | Varredura de portas, serviços e versões |
+| **Nikto** | Scanner de vulnerabilidades em servidores web |
+| **WhatWeb** | Identificação de tecnologias e frameworks |
+| **Wafw00f** | Detecção de WAF (Firewall de Aplicações Web) |
+| **Dirsearch** | Enumeração de diretórios e arquivos |
+| **Gobuster** | Brute force de diretórios, DNS e vhosts |
+| **FFUF** | Fuzzing de URLs e parâmetros |
+| **Amass** | Enumeração avançada de subdomínios |
+| **Subfinder** | Descoberta passiva de subdomínios |
+| **Assetfinder** | Coleta de ativos e domínios relacionados |
+| **XSStrike** | Detecção de vulnerabilidades XSS |
+| **Dalfox** | Scanner automatizado de XSS |
+| **Katana** | Crawler para mapear endpoints |
+| **Arjun** | Descoberta de parâmetros HTTP ocultos |
+| **Httpx** | Validação de serviços HTTP/HTTPS |
+| **Nuclei** | Scanner baseado em templates de vulnerabilidades |
+
+---
+
+### 🌐 Stress / Rede / HTTP (uso educacional)
+
+| Ferramenta | Para que serve |
+|-----------|----------------|
+| **Hping3** | Geração de pacotes TCP/IP para testes de rede |
+| **Slowloris** | DoS HTTP via conexões lentas |
+| **GoldenEye** | Stress HTTP em servidores web |
+| **Xerxes** | Flood HTTP para testes de carga |
+| **Torshammer** | DoS HTTP usando múltiplas conexões |
+| **HULK** | Flood HTTP com headers aleatórios |
+| **SlowHTTPTest** | Simulação de ataques HTTP lentos |
+| **PyFlooder** | Flood de tráfego para stress de rede |
+| **HTTP-Flood** | Envio massivo de requisições HTTP |
+| **UDP-Flood** | Stress de rede via pacotes UDP |
+| **TCP-Flood** | Stress de rede via pacotes TCP |
+| **HOIC** | Ferramenta de stress em camada de aplicação |
+| **Locust** | Testes de carga, tráfego e performance |
+
+---
+
+## 🚀 Instalação no Termux
+
+```bash
 pkg update -y
 
 pkg install git -y
