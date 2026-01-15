@@ -96,3 +96,17 @@ chmod +x olho_de_deus.sh
 ```bash
 ./olho_de_deus.sh
 ```
+
+<p align="center">
+  <sub>⚡ Powered by <b>SystemDown</b></sub>
+</p>
+
+<p align="center">
+  <sub>💬 Discord: <b>systemdown_hk</b></sub>
+</p>
+
+<p align="center">
+Ferramenta profissional para <b>Termux</b> focada em <b>OSINT, coleta de dados, scanners e testes de rede</b>.<br>
+Criada para estudos, laboratórios e ambientes controlados.
+</p>
+
