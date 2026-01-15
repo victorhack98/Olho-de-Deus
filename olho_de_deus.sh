@@ -2,6 +2,11 @@
 
 clear
 
+# ===============================
+#  OLHO DE DEUS - TERMUX
+#  Powered by SystemDown
+# ===============================
+
 # Verificação de Termux
 if [ -z "$PREFIX" ]; then
   echo "Execute este script no Termux!"
@@ -22,25 +27,31 @@ cat << "EOF"
   ⣿⣿⡟          O          ⢻⣿⣿
    ⠻⢿⣷⣦⣄        ⣠⣴⣾⡿⠟
           OLHO DE DEUS
+      ⚡ Powered by SystemDown
 EOF
 echo -e "${RESET}"
 }
 
 deps() {
+echo -e "${CYAN}[*] Verificando dependências...${RESET}"
 pkg update -y
 pkg install -y git python python-pip curl wget
 pip install --upgrade pip
 }
 
 clone_if_not() {
-[ -d "$1" ] || git clone "$2"
+if [ ! -d "$1" ]; then
+  git clone "$2"
+else
+  echo -e "${GREEN}[✔] $1 já existe${RESET}"
+fi
 }
 
 menu() {
 echo -e "${CYAN}═══════════════════════════════${RESET}"
-echo "[1] TheHarvester (OSINT dados)"
-echo "[2] PhoneInfoga (dados telefone)"
-echo "[3] Locust (teste de carga)"
+echo "[1] TheHarvester  → OSINT / Domínios / Emails"
+echo "[2] PhoneInfoga   → Dados de telefone"
+echo "[3] Locust        → Teste de carga / tráfego"
 echo "[0] Sair"
 echo -e "${CYAN}═══════════════════════════════${RESET}"
 read -p "➤ Escolha: " op
@@ -57,7 +68,7 @@ case $op in
 1)
 clone_if_not theHarvester https://github.com/laramies/theHarvester.git
 python theHarvester/theHarvester.py -h
-read -p "Enter para voltar..."
+read -p "Pressione ENTER para voltar..."
 ;;
 
 2)
@@ -66,17 +77,16 @@ cd phoneinfoga || exit
 pip install -r requirements.txt
 python3 phoneinfoga.py -h
 cd ..
-read -p "Enter para voltar..."
+read -p "Pressione ENTER para voltar..."
 ;;
 
 3)
-echo "Instalando Locust..."
+echo -e "${CYAN}[*] Instalando Locust...${RESET}"
 pip install locust
+echo -e "${GREEN}[✔] Locust instalado com sucesso${RESET}"
 echo ""
-echo "Locust instalado!"
-echo "Use: locust -h"
 locust -h
-read -p "Enter para voltar..."
+read -p "Pressione ENTER para voltar..."
 ;;
 
 0)
@@ -85,7 +95,7 @@ exit
 ;;
 
 *)
-echo "Opção inválida"
+echo -e "${RED}Opção inválida!${RESET}"
 sleep 1
 ;;
 esac
