@@ -45,34 +45,37 @@ clone_if_not() {
 }
 
 menu() {
-echo -e "${CYAN}════════════════════════════════════════════${RESET}"
-echo " 1) TheHarvester"
-echo " 2) PhoneInfoga"
-echo " 3) Locust"
-echo " 4) Hping3"
-echo " 5) Slowloris"
-echo " 6) SlowHTTPTest"
-echo " 7) Nmap"
-echo " 8) Nikto"
-echo " 9) SQLmap"
-echo "10) Metasploit"
-echo "11) WPScan"
-echo "12) WhatWeb"
-echo "13) Wafw00f"
-echo "14) Dirsearch"
-echo "15) Gobuster"
-echo "16) FFUF"
-echo "17) Amass"
-echo "18) Subfinder"
-echo "19) Assetfinder"
-echo "20) XSStrike"
-echo "21) Dalfox"
-echo "22) Katana"
-echo "23) Arjun"
-echo "24) Httpx"
-echo "25) Nuclei"
-echo " 0) Sair"
-echo -e "${CYAN}════════════════════════════════════════════${RESET}"
+echo -e "${CYAN}════════════════════════════════════════════════════════${RESET}"
+echo -e "${GREEN}Escolha a ferramenta para instalar:${RESET}"
+echo -e "${CYAN}════════════════════════════════════════════════════════${RESET}"
+
+echo -e " 1) TheHarvester       → OSINT: coleta de domínios e e-mails"
+echo -e " 2) PhoneInfoga        → Informações de telefones"
+echo -e " 3) Locust             → Teste de carga / tráfego"
+echo -e " 4) Hping3             → Geração de pacotes TCP/IP"
+echo -e " 5) Slowloris          → DoS HTTP (educacional)"
+echo -e " 6) SlowHTTPTest       → Simulação de ataques HTTP lentos"
+echo -e " 7) Nmap               → Varredura de portas e serviços"
+echo -e " 8) Nikto              → Scanner de falhas web"
+echo -e " 9) SQLmap             → Detecção e exploração de SQL Injection"
+echo -e "10) Metasploit         → Framework de exploração"
+echo -e "11) WPScan             → Scanner vulnerabilidades WordPress"
+echo -e "12) WhatWeb            → Identificação de tecnologias web"
+echo -e "13) Wafw00f            → Detecção de WAFs"
+echo -e "14) Dirsearch          → Brute force de diretórios web"
+echo -e "15) Gobuster           → Enumeração de diretórios / DNS / vhosts"
+echo -e "16) FFUF               → Fuzzing de URLs, parâmetros e diretórios"
+echo -e "17) Amass              → Enumeração de subdomínios e ativos"
+echo -e "18) Subfinder          → Descoberta passiva de subdomínios"
+echo -e "19) Assetfinder        → Coleta de domínios e subdomínios relacionados"
+echo -e "20) XSStrike           → Detecção e exploração de XSS"
+echo -e "21) Dalfox             → Scanner automático de XSS"
+echo -e "22) Katana             → Crawler para mapear rotas e endpoints web"
+echo -e "23) Arjun              → Descoberta de parâmetros HTTP ocultos"
+echo -e "24) Httpx              → Validação e análise de serviços HTTP/HTTPS"
+echo -e "25) Nuclei             → Scanner baseado em templates"
+echo -e " 0) Sair"
+echo -e "${CYAN}════════════════════════════════════════════════════════${RESET}"
 read -p "➤ Escolha: " op
 }
 
@@ -207,6 +210,7 @@ exit
 *)
 echo -e "${RED}Opção inválida${RESET}"
 ;;
+
 esac
 
 read -p "Pressione ENTER para continuar..."
