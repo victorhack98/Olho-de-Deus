@@ -81,13 +81,18 @@ Criada para estudos, laboratórios e ambientes controlados.
 ```bash
 pkg update -y
 ```
+```bash
 pkg install git -y
 ```
+```bash
 git clone https://github.com/victorhack98/Olho-de-Deus
 ```
+```bash
 cd Olho-de-Deus
 ```
+```bash
 chmod +x olho_de_deus.sh
 ```
+```bash
 ./olho_de_deus.sh
 ```
