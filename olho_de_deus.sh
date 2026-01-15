@@ -26,8 +26,9 @@ cat << "EOF"
    ⣴⣿⣿⡿⠿⠛⠛⠿⢿⣿⣿⣦
   ⣿⣿⡟          O          ⢻⣿⣿
    ⠻⢿⣷⣦⣄        ⣠⣴⣾⡿⠟
+   
           OLHO DE DEUS
-      ⚡ Pѳwɛʀɛɗ ɓy รyรtɛɱɗѳwɳ
+                     ⚡ Pѳwɛʀɛɗ ɓy รyรtɛɱɗѳwɳ
 EOF
 echo -e "${RESET}"
 }
