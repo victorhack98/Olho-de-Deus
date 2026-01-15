@@ -29,59 +29,40 @@ Criada para estudos, laboratórios e ambientes controlados.
 
 ---
 
-## 🧠 Ferramentas Inclusas
-
-### 🔍 OSINT / Enumeração / Scanners
-| Ferramenta | Para que serve |
-|-----------|----------------|
-| **TheHarvester** | Coleta de e-mails, domínios, hosts e subdomínios |
-| **PhoneInfoga** | Análise e OSINT de números telefônicos |
-| **Nmap** | Varredura de portas, serviços e versões |
-| **Nikto** | Scanner de vulnerabilidades em servidores web |
-| **WhatWeb** | Identificação de tecnologias e frameworks |
-| **Wafw00f** | Detecção de WAF (Firewall de Aplicações Web) |
-| **Dirsearch** | Enumeração de diretórios e arquivos |
-| **Gobuster** | Brute force de diretórios, DNS e vhosts |
-| **FFUF** | Fuzzing de URLs e parâmetros |
-| **Amass** | Enumeração avançada de subdomínios |
-| **Subfinder** | Descoberta passiva de subdomínios |
-| **Assetfinder** | Coleta de ativos e domínios relacionados |
-| **XSStrike** | Detecção de vulnerabilidades XSS |
-| **Dalfox** | Scanner automatizado de XSS |
-| **Katana** | Crawler para mapear endpoints |
-| **Arjun** | Descoberta de parâmetros HTTP ocultos |
-| **Httpx** | Validação de serviços HTTP/HTTPS |
-| **Nuclei** | Scanner baseado em templates de vulnerabilidades |
-
----
-
-### 🌐 Stress / Rede / HTTP (uso educacional)
-| Ferramenta | Para que serve |
-|-----------|----------------|
-| **Hping3** | Geração de pacotes TCP/IP para testes de rede |
-| **Slowloris** | DoS HTTP via conexões lentas |
-| **GoldenEye** | Stress HTTP em servidores web |
-| **Xerxes** | Flood HTTP para testes de carga |
-| **Torshammer** | DoS HTTP usando múltiplas conexões |
-| **HULK** | Flood HTTP com headers aleatórios |
-| **SlowHTTPTest** | Simulação de ataques HTTP lentos |
-| **PyFlooder** | Flood de tráfego para stress de rede |
-| **HTTP-Flood** | Envio massivo de requisições HTTP |
-| **UDP-Flood** | Stress de rede via pacotes UDP |
-| **TCP-Flood** | Stress de rede via pacotes TCP |
-| **HOIC** | Ferramenta de stress em camada de aplicação |
-| **Locust** | Testes de carga, tráfego e performance |
-
----
-
 ## 🚀 Instalação no Termux
 
-```bash
-pkg update -y
+<div style="position:relative">
+
+<button onclick="copyCode()" style="
+position:absolute;
+right:10px;
+top:10px;
+padding:6px 10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#2ea44f;
+color:#fff;
+font-weight:bold;">
+📋 Copiar
+</button>
+
+<pre id="install-code"><code>pkg update -y
 
 pkg install git -y
 git clone https://github.com/victorhack98/Olho-de-Deus
 cd Olho-de-Deus
 chmod +x olho_de_deus.sh
-./olho_de_deus.sh
+./olho_de_deus.sh</code></pre>
+
+</div>
+
+<script>
+function copyCode() {
+  const code = document.getElementById("install-code").innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("✅ Código copiado com sucesso!");
+  });
+}
+</script>
 
