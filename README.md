@@ -80,7 +80,7 @@ Criada para estudos, laboratórios e ambientes controlados.
 
 ```bash
 pkg update -y
-
+```
 pkg install git -y
 git clone https://github.com/victorhack98/Olho-de-Deus
 cd Olho-de-Deus
