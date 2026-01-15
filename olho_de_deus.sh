@@ -27,7 +27,7 @@ cat << "EOF"
   ⣿⣿⡟          O          ⢻⣿⣿
    ⠻⢿⣷⣦⣄        ⣠⣴⣾⡿⠟
           OLHO DE DEUS
-      ⚡ Powered by SystemDown
+      ⚡ Pѳwɛʀɛɗ ɓy รyรtɛɱɗѳwɳ
 EOF
 echo -e "${RESET}"
 }
