@@ -78,15 +78,10 @@ Criada para estudos, laboratórios e ambientes controlados.
 
 ```bash
 pkg update -y
+
 pkg install git -y
 git clone https://github.com/victorhack98/Olho-de-Deus
 cd Olho-de-Deus
 chmod +x olho_de_deus.sh
 ./olho_de_deus.sh
 
-⚠️ Aviso Legal
-Este projeto é destinado exclusivamente para fins educacionais, estudos e ambientes controlados.
-O uso indevido é de inteira responsabilidade do usuário.
-�
-👁️ OLHO DE DEUS — Powered by SystemDown
-Conhecimento é poder. Use com responsabilidade.
